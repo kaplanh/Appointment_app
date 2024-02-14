@@ -1,70 +1,256 @@
-# Getting Started with Create React App
+# NBA Legends_with_lifting-state-up
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[:point_right: Click here to see on browser](https://nba-legends-app-with-lifting-state-up.vercel.app/)
 
-## Available Scripts
+![lifting state up](https://github.com/kaplanh/nba_legends-app_with_lifting-state-up/assets/101884444/5897c08b-f55a-4a25-8bfc-2c37bcf8a636)
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+| **What's used in this app ?**                                                | **How use third party libraries**          | **Author**                                                                       |
+| ---------------------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------- |
+| [lifting state up](https://react.dev/learn/sharing-state-between-components) |                                            | [Take a look at my portfolio](https://kaplanh.github.io/Portfolio_with_CssFlex/) |
+| useState() Hook                                                              |                                            | [Visit me on Linkedin](https://www.linkedin.com/in/kaplan-h/)                    |
+| Conditional rendering                                                        |                                            |                                                                                  |
+| [React-Bootstrap](https://react-bootstrap.netlify.app/)                      | npm i / yarn add react-bootstrap bootstrap |                                                                                  |
+| Deploy with [Vercel](https://vercel.com/dashboard)                           |                                            |                                                                                  |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How To Run This Project 🚀
 
-### `yarn test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💻 Install React 👇
 
-### `yarn build`
+```bash
+yarn create react-app .  or npx create-react-app .
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 💻 Install Sass 👇
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn add sass  or npm i sass
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔴 Delete these files and delete the imports👇
 
-### `yarn eject`
+    - App.test.js
+    - reportWebVitals.js
+    - setupTests.js
+    - favicon.ico
+    - logo192.png
+    - logo512.png
+    - manifest.json
+    - robots.txt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 💻 Start the project 👇
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn start or npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+OR
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-   <strong>Clone the Repo</strong>
 
-## Learn More
+    ```sh
+    git clone
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   <strong>Install NPM packages</strong>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```sh
+    npm install or yarn
+    ```
 
-### Code Splitting
+-   <strong>Run the project</strong>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```sh
+    npm start or yarn start
+    ```
 
-### Analyzing the Bundle Size
+-   <strong>Open the project on your browser</strong>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```sh
+    http://localhost:3000/
+    ```
 
-### Making a Progressive Web App
+-   ### <strong>Enjoy! 🎉</strong>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Project Skeleton
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+nba legends (folder)
+|
+|----public (folder)
+│     └── index.html
+|----src (folder)
+|    |--- components (folder)
+│    │       ├── ContainerCard.jsx
+│    │       ├── Header.jsx
+│    │       ├── PlayerCard.jsx
+│    │
+|    |--- helper (folder)
+|    |       |── data.js
+│    │
+│    |--- assets (folder)
+|    |      ├── nba-logo.png
+|    |
+│    ├--- App.js
+│    │--- data.js
+│    |--- index.js
+│    ├--- index.css
+│
+│
+|-- .gitignore
+|── package-lock.json
+├── package.json
+|── README.md
+|── yarn.lock
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `yarn build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### At the end of the project, the following topics are to be covered;
+
+-   Lifting state up
+
+    ```jsx
+    // src/App.jsx
+        import CardContainer from "./components/cardcontainer/CardContainer";
+    import Header from "./components/header/Header";
+
+    import { useState } from "react";
+
+    function App() {
+       ** const [search, setSearch] = useState(""); **
+        return (
+            <div>
+              **  <Header setSearch={setSearch} />**
+              **  <CardContainer search={search} />**
+            </div>
+        );
+    }
+
+    export default App;
+
+
+    // src/Header.jsx
+    import img from "../../assets/nba-logo.png";
+
+    **const Header = ({ setSearch }) => {**
+        return (
+            <div className="text-center mt-4 ">
+                <img src={img} alt="" />
+                <h1>NBA Legends</h1>
+                <input
+                    **onChange={(e) => setSearch(e.target.value)}**
+                    className="form-control w-50 mx-auto m-5"
+                    type="search"
+                    name="name"
+                    id="name"
+                    placeholder="Search Player..."
+                />
+            </div>
+        );
+    };
+
+    export default Header;
+
+
+
+    // src/CardContainer.jsx
+    import { data } from "../../helper/data";
+    import PlayerCard from "../playercard/PlayerCard.jsx";
+    const CardContainer = ({ search }) => {
+        return (
+            <div className="container">
+                <div className=" row ">
+                    {data
+                        .filter((player) =>
+                            player.name
+                                .toLocaleLowerCase()
+                                .includes(search.trim().toLocaleLowerCase())
+                        )
+                        .map((player, i) => (
+                            <PlayerCard key={i} {...player} />
+                        ))}
+                </div>
+            </div>
+        );
+    };
+    ```
+
+export default CardContainer;
+
+        ```
+
+-   conditional rendering
+
+    ```jsx
+    import Img from "./Img";
+    import Ul from "./Ul";
+    import "./PlayerCard.css";
+
+    import { useState } from "react";
+
+    const PlayerCard = ({ img, name, statistics }) => {
+        const [visible, setVisible] = useState(true);
+
+        const handleClick = () => {
+            setVisible(!visible);
+        };
+
+        return (
+            <div
+                className=" col col-md-6 col-lg-4 col-xl-3 p-2"
+                style={{ height: "450px" }}
+            >
+                <div onClick={handleClick} className="card h-100 border-0 ">
+                    {visible ? (
+                        <Img img={img} />
+                    ) : (
+                        <Ul statistics={statistics} />
+                    )}
+                    <div className="card-body h-25 ">
+                        <h5 className="card-title">{name}</h5>
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
+    export default PlayerCard;
+    ```
+
+-   yükseklikleri farkli olan img leri esitlemek icin
+
+    ```jsx
+    const Img = ({ img }) => {
+        return (
+            <div className="img-container h-75">
+                <img
+                    src={img}
+                    className="card-img-top h-100 rounded-0"
+                    alt="player"
+                />
+            </div>
+        );
+    };
+
+    export default Img;
+    ```
+
+---
+
+## Feedback and Collaboration
+
+I value your feedback and suggestions. If you have any comments, questions, or ideas for improvement regarding this project or any of my other projects, please don't hesitate to reach out.
+I'm always open to collaboration and welcome the opportunity to work on exciting projects together.
+Thank you for visiting my project. I hope you have a wonderful experience exploring it, and I look forward to connecting with you soon!
+
+<p align="center"> ⌛<strong> Happy Coding </strong> ✍ </p>
