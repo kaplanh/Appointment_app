@@ -10,7 +10,7 @@
 | --------------------------------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------- |
 | [lifting state up](https://react.dev/learn/sharing-state-between-components)            |                                            | [Take a look at my portfolio](https://kaplanh.github.io/Portfolio_with_CssFlex/) |
 | [useState() Hook](https://react.dev/learn#using-hooks)                                  |                                            | [Visit me on Linkedin](https://www.linkedin.com/in/kaplan-h/)                    |
-| [react-events](https://react.dev/learn#responding-to-events)                            |                                            | [Visit me on Linkedin](https://www.linkedin.com/in/kaplan-h/)                    |
+| [react-events](https://react.dev/learn#responding-to-events)                            |                                            |                    |
 | [React-Conditional rendering](https://react.dev/learn#conditional-rendering)            |                                            |                                                                                  |
 | [React-Bootstrap](https://react-bootstrap.netlify.app/)                                 | npm i / yarn add react-bootstrap bootstrap |                                                                                  |
 | [React-icons](https://react-icons.github.io/react-icons/)                               | npm i / yarn add react-icons               |                                                                                  |
