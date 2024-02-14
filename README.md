@@ -1,6 +1,6 @@
-# NBA Legends_with_lifting-state-up
+# Appointment App
 
-[:point_right: Click here to see on browser](https://nba-legends-app-with-lifting-state-up.vercel.app/)
+[:point_right: Click here to see on browser](https://appointment-app-v1.netlify.app/)
 
 ![appointment](https://github.com/kaplanh/Appointment_app/assets/101884444/63923413-ba65-4e73-a9b5-0ab6a696bcab)
 
