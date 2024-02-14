@@ -2,7 +2,7 @@
 
 [:point_right: Click here to see on browser](https://nba-legends-app-with-lifting-state-up.vercel.app/)
 
-![lifting state up](https://github.com/kaplanh/nba_legends-app_with_lifting-state-up/assets/101884444/5897c08b-f55a-4a25-8bfc-2c37bcf8a636)
+![appointment](https://github.com/kaplanh/Appointment_app/assets/101884444/63923413-ba65-4e73-a9b5-0ab6a696bcab)
 
 ---
 
