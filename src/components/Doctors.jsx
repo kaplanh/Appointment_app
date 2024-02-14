@@ -6,13 +6,18 @@ import Col from "react-bootstrap/Col";
 
 //*doctors data
 import { doctorData } from "../helpers/data";
+
+
 import { useState } from "react";
 import AddModal from "./AddModal";
 
             
 const Doctors = ({apps,setApps}) => {
     const [show, setShow] = useState(false);
-    const [drName , setDrName ] = useState('')
+    const [drName, setDrName] = useState("");
+    // const handleImgClick = () => {
+    //   setShow(true)
+    // }
     return (
         <Container className="p-2">
             <h3
@@ -24,7 +29,7 @@ const Doctors = ({apps,setApps}) => {
 
             <Row className="justify-content-center">
                 {doctorData.map(({ id, name, dep, img }) => (
-                    <Col key={id} xs={6} sm={4} md={3} >
+                    <Col key={id} xs={6} sm={4} md={3}>
                         <img
                             onClick={() => {
                                 setShow(true);

@@ -3,7 +3,7 @@ import AppointmentsList from "../components/AppointmentsList";
 import { appointmentData } from "../helpers/data";
 import { useState } from "react";
 
-const HomePage = () => {
+const Home = () => {
     const [appointments, setAppointments] = useState(appointmentData);
     return (
         <main className="text-center mt-2">
@@ -14,4 +14,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Home;
