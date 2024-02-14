@@ -1,7 +1,7 @@
-import { useState } from "react";
 import Doctors from "../components/Doctors";
-import { appointmentData } from "../helpers/data";
 import AppointmentsList from "../components/AppointmentsList";
+import { appointmentData } from "../helpers/data";
+import { useState } from "react";
 
 const HomePage = () => {
     const [appointments, setAppointments] = useState(appointmentData);
